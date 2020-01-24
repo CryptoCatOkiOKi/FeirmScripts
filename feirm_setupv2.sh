@@ -141,8 +141,8 @@ for i in `seq 1 1 $MNCOUNT`; do
     # read PORT
   
     if [ -z "$PORT" ]; then
-        PORT=16100
-	    RPCPORT=17100
+        PORT=4919
+	    RPCPORT=14919        
 	    PORT1=""
         for (( ; ; ))
         do
