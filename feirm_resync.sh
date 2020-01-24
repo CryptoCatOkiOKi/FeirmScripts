@@ -63,6 +63,8 @@ for FILE in ~/bin/${NAME}d_$PARAM1.sh; do
 
     BLOCKCOUNTCOINEXPLORER=$(curl -s4 https://explorer2.feirm.com/api/getblockcount)
     BLOCKHASHCOINEXPLORER=$(curl -s4 https://explorer2.feirm.com/api/getblockhash?index=${BLOCKCOUNTCOINEXPLORER})
+    BLOCKHASHCOINEXPLORER=${BLOCKHASHCOINEXPLORER%\"}
+    BLOCKHASHCOINEXPLORER=${BLOCKHASHCOINEXPLORER#\"}
 	echo "BLOCKHASHCOINEXPLORER="$BLOCKHASHCOINEXPLORER
 
 	if [ "$BLOCKHASHCOINEXPLORER" == "Too" ]; then

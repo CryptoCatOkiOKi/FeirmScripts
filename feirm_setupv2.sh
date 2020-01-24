@@ -292,7 +292,8 @@ for i in `seq 1 1 $MNCOUNT`; do
 	    rm -R ./database
 	    rm -R ./blocks	
 	    rm -R ./sporks
-	    rm -R ./chainstate	
+	    rm -R ./chainstate
+        rm ./budget.dat	
         unzip  bootstrap.zip
         rm ./bootstrap.zip
         sh ~/bin/${NAME}d_$ALIAS.sh		
