@@ -39,7 +39,7 @@ for FILE in ~/bin/${NAME}d_$PARAM1.sh; do
         echo "PID="$PID
 
         if [ -z "$PID" ]; then
-            echo "Monk $ALIAS is STOPPED can't check if synced!"
+            echo "${NAME} $ALIAS is STOPPED can't check if synced!"
             break
         fi
 
