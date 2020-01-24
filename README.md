@@ -109,15 +109,15 @@ Options:
 ## Commands:
 Start: 	
 ```
-./bin/feirmd_mn1.sh
+~/bin/feirmd_mn1.sh
 ```
 Stop:	
 ```
-./bin/feirm-cli_mn1.sh stop
+~/bin/feirm-cli_mn1.sh stop
 ```
 Status:	
 ```
-./bin/feirm-cli_mn1.sh masternode status
+~/bin/feirm-cli_mn1.sh masternode status
 ```
 Debug:	
 ```
